@@ -1,0 +1,269 @@
+body {
+	background-color: #f2ebe3; 
+	padding:0; 
+	margin:0;
+	/*background-image: url("back.jpg");
+	background-repeat: repeat;
+	background-size: 300px 300px;*/
+}
+
+/* unvisited link */
+a {
+}
+
+a:visited {
+}
+
+/* visited link */
+a:hover {
+}
+
+/* mouse over link */
+a:active {
+}
+
+.footer {
+	padding: 15px; 
+}
+.navbar-default {
+	background-color: #e1ebee; 
+}
+/* main pages */ 
+.container {
+	display:block; 
+	background-color: white; 
+	min-width: 450px; 
+}
+
+.row {
+	min-width: 450px;
+	padding: 5px; 
+}
+
+/* middle row/main content*/
+.side-menu  {
+	display: block; 
+	position: static; 
+	background-color: #e1ebee; 
+	padding:15px;
+	margin:0px; 
+	float:left; 
+	width: 15%; 
+	min-width: 100px; 
+	border-radius: 5px;
+}
+
+/* used for side list vertical navigation*/
+.nav-stacked li.active a {
+	background-color: ; 
+	color: ;
+}
+.nav-stacked li a {
+	background-color:; 
+	color: ;
+}
+.nav-stacked li a:hover {
+	background-color: ; 
+	color: ;
+}
+
+.side-main  {
+	display: block; 
+	position: static; 
+	background-color:; 
+	padding:15px;
+	margin:0px; 
+	float: left; 
+	width: 85%; 
+	min-width: 400px; 
+}
+
+.main  {
+	display: block; 
+	position: static; 
+	background-color:; 
+	padding:15px;
+	margin:0px; 
+	float: left; 
+	width: 100%; 
+	min-width: 500px; 
+}
+
+/*disable resizeing if view too small*/ 
+@media (max-width:767px) {
+	.container {
+		width: 700px; 		
+		min-width: 400px; 
+	}
+	.row {
+		width: 700px; 
+		min-width: 400px; 
+	}
+	
+   .side-menu  {
+		background-color: orange; 
+		width: 120px; 
+		min-width: 0px; 
+	}
+
+	.side-main  { 
+		background-color: orange; 
+		width: 530px; 
+		min-width: 0px; 
+	}
+}
+
+
+/* main box*/
+.mailbox  {
+	border-collapse: collapse;
+	padding: 0; margin:10px 0 10px 0; 
+	border-radius: 5px;
+	background-color: #e1ebee; 
+	min-width: 300px; 
+	width: 100%;
+}
+.mailbox  td:nth-child(1), .mailbox th:nth-child(1) {
+	width: 10%; 
+	max-width: 10px; 
+}
+.mailbox  td:nth-child(2), .mailbox th:nth-child(2), .mailbox  td:nth-child(4), .mailbox th:nth-child(4) {
+	width: 20%; 
+}
+.mailbox  td:nth-child(3), .mailbox th:nth-child(3) {
+	width: 50%; 
+}
+.mailbox   th, td { 
+   border-bottom: 1px solid #232323;
+   padding: 5px; 
+}
+.mailbox   tr:hover { 	
+	background-color: #3e4959; 
+	color: white; 
+}
+tr.Read{
+	font-weight: lighter;
+}
+tr.Unread { 	
+	font-weight: bolder;
+}
+tr.Read .glyphicon-envelope, tr.Sent .glyphicon-envelope, tr.Trash .glyphicon-envelope {
+	color: #b1cfd8; 
+}
+tr.Unread .glyphicon-envelope {
+	color: black; 
+}
+.clickmail:hover {
+  cursor: pointer;
+}
+.compose, .readmail{
+	padding: 10px; margin:10px 0 10px 0; 
+	border-radius: 5px;
+	background-color: #e1ebee; 
+	min-width: 300px; 
+	width: 100%;
+	overflow: auto;
+}
+
+/* forums threads*/
+.forum, .thread  {
+	border-collapse: collapse;
+	padding: 0; margin:10px 0 10px 0; 
+	border-radius: 5px;
+	background-color: #e1ebee; 
+	min-width: 300px; 
+	width: 100%;
+}
+.thread   th, td , .forum   th, td{ 
+	border-bottom: 1px solid black;
+	padding: 5px; 
+}
+.thread   tr:hover , .forum   tr:hover{ 	
+	background-color: #b1cfd8; 
+	color: white; 
+}
+.thread td:hover , .forum td:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/*
+ * Selectable CSS3 Rating Stars by Martin Ivanov (@wemakesitesnet)
+ * @version 1.0
+ * @author Martin Ivanov
+ * @url portfolio http://wemakesites.net/
+ * @url twitter https://twitter.com/wemakesitesnet
+ * @url blog http://acidmartin.wordpress.com/
+ **/
+ 
+/*
+ * Do you like this solution? Please, donate:
+ * https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QFUHPWJB2JDBS
+ * 
+ * If you are looking for a feature-complete rating system http://acidjs.wemakesites.net/rating.html 
+ *
+ **/
+ 
+.acidjs-rating-stars,
+.acidjs-rating-stars label::before
+{
+    display: inline-block;
+}
+ 
+.acidjs-rating-stars label:hover,
+.acidjs-rating-stars label:hover ~ label
+{
+    color: #189800;
+}
+ 
+.acidjs-rating-stars *
+{
+    margin: 0;
+    padding: 0;
+}
+ 
+.acidjs-rating-stars input
+{
+    display: none;
+}
+ 
+.acidjs-rating-stars
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+ 
+.acidjs-rating-stars label
+{
+    color: #ccc;
+}
+ 
+.acidjs-rating-stars label::before
+{
+    content: "\2605";
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+ 
+.acidjs-rating-stars input:checked ~ label
+{
+    color: #f5b301;
+}
+ 
+ /* for star show */
+ span.stars, span.stars span {
+    display: block;
+    background: url(stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
